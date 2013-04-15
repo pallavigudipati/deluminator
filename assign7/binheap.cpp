@@ -327,4 +327,47 @@ void binheap :: merge( binheap* a )
 	
 	this -> set_num( this -> get_num() + a -> get_num() );
 	a -> set_root(NULL);	
+}
+
+void binheap :: print()
+{
+	node* temp = this -> get_root();
+
+	char red[] = { 0x1b, '[', '1', ';', '3', '1', 'm', 0 };
+	char blue[] = { 0x1b, '[', '1', ';', '3', '4', 'm', 0 };
+	char normal[] = { 0x1b, '[', '0', ';', '3', '9', 'm', 0 };
+
+	cout << endl;
+	while( temp != NULL )
+	{
+		cout << blue << temp -> get_data() << normal << endl;
+		this -> rec_print( temp );
+		temp = temp -> get_sibling();
+		cout << endl << endl;
+	}
+}	
+
+void binheap :: rec_print( node* a )
+{
+	if( a == NULL )
+		return;
+	else if( a -> get_lmc() == NULL )
+	{
+		cout <<  a -> get_data() << " ";
+		return;
+	}	
+
+	else
+	{
+		cout << a -> get_data() << "{ ";
+		node* temp = a -> get_lmc();
+
+		while( temp != NULL )
+		{
+			this -> rec_print( temp );
+			temp = temp -> get_sibling();
+		}	
+
+		cout << "} ";
+	}	
 }	

@@ -15,15 +15,25 @@ main()
 	{
 		cout << "Select operation :" << endl;
 		cout << "1) Insert." << endl << "2) Delete maximum." << endl << "3) Increase key." << endl;
-		cout << "4) Meld Heap A and Heap B." << endl << "5) Exit." << endl;
+		cout << "4) Meld Heap A and Heap B." << endl << "5) Print." << endl << "6) Exit." << endl;
 		cout << "---------------------------------------------------------------------------------------" << endl;	
+		/*
+		Printing
+		eg:
+		4
+		4{ 2{ 1 } 3 } 
+	
+		- 4 is a node in the root list
+		- children of 4 are 2 , 3
+		- child of 2 is 1
 
+		*/
 		int option;
 		cin >> option;
 		
 		if( option == 1 )
 		{
-			cout << blue << "1) Heap A." << endl << "2) Heap B." << normal << endl;
+			cout << "1) Heap A." << endl << "2) Heap B." << normal << endl;
 			int sub_option;
 			cin >> sub_option;
 			if( sub_option == 1 )
@@ -48,7 +58,7 @@ main()
 		
 		else if( option == 2 )
 		{
-			cout << blue << "1) Heap A." << endl << "2) Heap B." << normal << endl;
+			cout << "1) Heap A." << endl << "2) Heap B." << normal << endl;
 			int sub_option;
 			cin >> sub_option;
 			if( sub_option == 1 )
@@ -79,7 +89,7 @@ main()
 
 		else if( option == 3 )
 		{
-			cout << blue << "1) Heap A." << endl << "2) Heap B." << normal << endl;
+			cout << "1) Heap A." << endl << "2) Heap B." << normal << endl;
 			int sub_option;
 			cin >> sub_option;
 			if( sub_option == 1 )
@@ -97,7 +107,7 @@ main()
 			
 			else if( sub_option == 2 )
 			{
-				if( a -> get_root() == NULL )
+				if( b -> get_root() == NULL )
 					cout << red << "ERROR : Heap B is empty." << normal << endl;
 				else
 				{	
@@ -116,11 +126,37 @@ main()
 		{
 			a -> meld( b );
 		}	
-
+		
 		else if( option == 5 )
+		{
+			cout << "1) Heap A." << endl << "2) Heap B." << normal << endl;
+			int sub_option;
+			cin >> sub_option;
+			if( sub_option == 1 )
+			{
+				if( a -> get_root() == NULL )
+					cout << red << "ERROR : Heap A is empty." << normal << endl;
+				else
+				{
+					a -> print();
+				}	
+			}
+			
+			else if( sub_option == 2 )
+			{
+				if( b -> get_root() == NULL )
+					cout << red << "ERROR : Heap B is empty." << normal << endl;
+				else
+				{
+					b -> print();	
+				}	
+			}
+
+		}	
+		else if( option == 6 )
 			break;
 
 		else
-			cout << red << "ERROR : Invalid option." << endl;
+			cout << red << "ERROR : Invalid option." << normal << endl;
 	}	
 }	

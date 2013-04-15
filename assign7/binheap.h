@@ -24,4 +24,6 @@ class binheap
 		node* find_max();
 		node* find_max_prev();
 		void merge( binheap* a );
+		void print();
+		void rec_print( node* a );
 };
