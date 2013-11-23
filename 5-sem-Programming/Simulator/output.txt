@@ -1,0 +1,162 @@
+Time 0
+Counter Id: 0
+Status: OCCUPIED  till: 5
+Max number of goods: 5
+Present number of goods: 0
+Closing time: 5
+Person Id: 0
+
+Counter Id: 1
+Status: OCCUPIED  till: 2
+Max number of goods: 4
+Present number of goods: 2
+Closing time: 0
+Person Id: 1
+
+Counter Id: 2
+Status: OCCUPIED  till: 1
+Max number of goods: 6
+Present number of goods: 5
+Closing time: 0
+Person Id: 2
+
+_________________________________
+Time 1
+Counter Id: 0
+Status: OCCUPIED  till: 5
+Max number of goods: 5
+Present number of goods: 0
+Closing time: 5
+Person Id: 0
+
+Counter Id: 1
+Status: OCCUPIED  till: 2
+Max number of goods: 4
+Present number of goods: 2
+Closing time: 0
+Person Id: 1
+
+Counter Id: 2
+Status: OCCUPIED  till: 2
+Max number of goods: 6
+Present number of goods: 4
+Closing time: 0
+Person Id: 3
+
+_________________________________
+Time 2
+Counter Id: 0
+Status: OCCUPIED  till: 5
+Max number of goods: 5
+Present number of goods: 0
+Closing time: 5
+Person Id: 0
+
+Counter Id: 1
+Status: OCCUPIED  till: 3
+Max number of goods: 4
+Present number of goods: 1
+Closing time: 0
+Person Id: 4
+
+Counter Id: 2
+Status: OCCUPIED  till: 3
+Max number of goods: 6
+Present number of goods: 3
+Closing time: 0
+Person Id: 5
+
+_________________________________
+Time 3
+Counter Id: 0
+Status: OCCUPIED  till: 5
+Max number of goods: 5
+Present number of goods: 0
+Closing time: 5
+Person Id: 0
+
+Counter Id: 1
+Status: OCCUPIED  till: 4
+Max number of goods: 4
+Present number of goods: 0
+Closing time: 4
+Person Id: 6
+
+Counter Id: 2
+Status: OCCUPIED  till: 4
+Max number of goods: 6
+Present number of goods: 2
+Closing time: 0
+Person Id: 7
+
+_________________________________
+Time 4
+Counter Id: 0
+Status: OCCUPIED  till: 5
+Max number of goods: 5
+Present number of goods: 0
+Closing time: 5
+Person Id: 0
+
+Counter Id: 1
+Status: CLOSED  till: -1
+Max number of goods: 4
+Present number of goods: 0
+Closing time: 4
+Person Id: -1
+
+Counter Id: 2
+Status: OCCUPIED  till: 5
+Max number of goods: 6
+Present number of goods: 1
+Closing time: 0
+Person Id: 8
+
+_________________________________
+Time 5
+Counter Id: 0
+Status: CLOSED  till: -1
+Max number of goods: 5
+Present number of goods: 0
+Closing time: 5
+Person Id: -1
+
+Counter Id: 1
+Status: CLOSED  till: -1
+Max number of goods: 4
+Present number of goods: 0
+Closing time: 4
+Person Id: -1
+
+Counter Id: 2
+Status: OCCUPIED  till: 6
+Max number of goods: 6
+Present number of goods: 0
+Closing time: 6
+Person Id: 9
+
+_________________________________
+Time 6
+Counter Id: 0
+Status: CLOSED  till: -1
+Max number of goods: 5
+Present number of goods: 0
+Closing time: 5
+Person Id: -1
+
+Counter Id: 1
+Status: CLOSED  till: -1
+Max number of goods: 4
+Present number of goods: 0
+Closing time: 4
+Person Id: -1
+
+Counter Id: 2
+Status: CLOSED  till: -1
+Max number of goods: 6
+Present number of goods: 0
+Closing time: 6
+Person Id: -1
+
+_________________________________
+Simulation ended at time = 6

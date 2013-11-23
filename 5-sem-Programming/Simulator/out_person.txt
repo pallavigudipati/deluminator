@@ -1,0 +1,293 @@
+Time -1
+
+_________________________________
+Time 0
+
+_________________________________
+Time 1
+
+_________________________________
+Time 2
+
+_________________________________
+Time 3
+
+_________________________________
+Time 4
+
+_________________________________
+Time 5
+
+_________________________________
+Time 6
+
+_________________________________
+Final Snapshot
+
+Time 6
+
+In Queue Person Id: 6
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 1
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 7
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 1
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 8
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 2
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 9
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 2
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 10
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 2
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 11
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 2
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 12
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 3
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 13
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 3
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 14
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 3
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 15
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 3
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 16
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 4
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 17
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 4
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 18
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 4
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 19
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 4
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 20
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 5
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 21
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 5
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 22
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 5
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 23
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 5
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 24
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 6
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 25
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 6
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 26
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 6
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+Person Id: 27
+Status: 0 till: 0
+Counter: -1
+Goods collected: 0
+Goods required: 9
+In queue entry time: 6
+Counter entry time: -1
+Out queue entry time: -1
+Out queue exit tme: -1
+
+_________________________________
+Time 6
+
+Out Queue Person Id: 0
+Status: 2 till: 10
+Counter: 0
+Goods collected: 5
+Goods required: 4
+In queue entry time: 0
+Counter entry time: 0
+Out queue entry time: 5
+Out queue exit tme: -1
+
+Person Id: 2
+Status: 2 till: -1
+Counter: 2
+Goods collected: 5
+Goods required: 4
+In queue entry time: 0
+Counter entry time: 0
+Out queue entry time: 5
+Out queue exit tme: -1
+
+Person Id: 1
+Status: 2 till: -1
+Counter: 1
+Goods collected: 5
+Goods required: 4
+In queue entry time: 0
+Counter entry time: 0
+Out queue entry time: 6
+Out queue exit tme: -1
+
+Person Id: 4
+Status: 2 till: -1
+Counter: 4
+Goods collected: 5
+Goods required: 4
+In queue entry time: 1
+Counter entry time: 1
+Out queue entry time: 6
+Out queue exit tme: -1
+
+_________________________________
+Simulation ended at time = 6
