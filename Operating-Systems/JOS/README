@@ -1,0 +1,75 @@
+/*
+ * Author: Pallavi Gudipati
+ * Operating Systems Lab
+ */
+
+-> Course-work from:
+	- http://pdos.csail.mit.edu/6.828/2012/
+
+-> Labs completed:
+	- Lab 1:
+		- Understanding PC Bootstrap.
+			- Getting Started with x86 assembly.
+			- Simulating the x86.
+			- The PC's Physical Address Space.
+			- The ROM BIOS
+		- Understanding the Boot Loader.
+			- Loading the Kernel.
+		- The Kernel.
+			- Using virtual memory to work around position dependence.
+			- Formatted Printing to the Console.
+			- The Stack.
+		
+	- Lab 2:
+		- Physical Page Management.
+		- Virtual Memory.
+			- Virtual, Linear, and Physical Addresses.
+			- Reference counting.
+			- Page Table Management.
+		- Kernel Address Space.
+			- Permissions and Fault Isolation.
+			- Initializing the Kernel Address Space.
+
+	- Lab 3:
+		- User Environments and Exception Handling.
+			- Environment State.
+			- Allocating the Environments Array.
+			- Creating and Running Environments.
+			- Handling Interrupts and Exceptions.
+			- Basics of Protected Control Transfer.
+			- Types of Exceptions and Interrupts.
+			- Nested Exceptions and Interrupts.
+			- Setting Up the IDT.
+		- Page Faults, Breakpoints Exceptions, and System Calls.
+			- Handling Page Faults.
+			- The Breakpoint Exception.
+			- System calls.
+			- User-mode startup.
+			- Page faults and memory protection. 
+
+	- Lab 4:
+		- Multiprocessor Support and Cooperative Multitasking.
+			- Multiprocessor Support.
+			- Application Processor Bootstrap.
+			- Per-CPU State and Initialization.
+			- Locking.
+			- Round-Robin Scheduling.
+			- System Calls for Environment Creation.
+			
+		- Copy-on-Write Fork.
+			- User-level page fault handling.
+			- Setting the Page Fault Handler.
+			- Normal and Exception Stacks in User Environments.
+			- Invoking the User Page Fault Handler.
+			- User-mode Page Fault Entrypoint.
+			- Implementing Copy-on-Write Fork.
+
+		- Preemptive Multitasking and Inter-Process communication (IPC).
+			- Clock Interrupts and Preemption.
+			- Interrupt discipline.
+			- Handling Clock Interrupts.
+			- Inter-Process communication (IPC).
+			- IPC in JOS.
+			- Sending and Receiving Messages.
+			- Transferring Pages.
+			- Implementing IPC.
