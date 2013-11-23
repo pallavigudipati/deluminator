@@ -1,0 +1,50 @@
+* Polynomial arithmetic, factorization, integration and decomposition.
+
+* Author: Pallavi Gudipati
+		CS11B044
+
+-> Files included
+	-README
+
+	src/
+	-utilities.ml
+	-arithmetic.ml
+	-decomposition.ml
+	-factors.ml
+	-integration.ml
+
+-> Usage
+	-Language: PolyML
+	-Terminal:
+		> poly
+		> use "filename";
+	- All the coefficients are real.
+	  example: add_poly([2.0,1.3], [5.6,7.8]);
+	- Polynomial is written from lowest power to highest power.
+	  First element is assumed to be the constant.
+	- Input types, return values and assumptions are mentions in the code.
+
+-> Functions tbe used
+	- arithmetic.ml
+		- Addtion
+		  add_poly(x, y);
+		- Subtraction
+		  sub_poly(x, y);
+		- Multiplication
+		  mult_poly(x, y);
+		- Division
+		  div_poly(x, y);
+	
+	- factors.ml
+		- Factorization
+		  find_linear_factors(x);
+		- Common Factors
+		  find_common_factors(x, y);
+
+	- integration.ml
+		- Integration
+		  integrate(x);
+
+	- decomposition.ml
+		- Decomposition
+		  decompose(x, y);
