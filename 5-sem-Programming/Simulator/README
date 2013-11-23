@@ -1,0 +1,28 @@
+/* Author: Pallavi Gudipati (CS11B044)
+ * Package name: Simulator.
+ */
+
+-> Files included.
+	-Makefile
+	-README
+
+	src/
+	-person.cpp
+	-queue_sim.cpp
+	-counter.cpp
+	-display.cpp
+	-simulator.h
+	-simulator.cpp
+	-sample.cpp
+
+-> Usage.
+	-A sample code is given.
+	-The library can be included using
+		#include "<path>/simulator.h"
+
+-> Compilation.
+	-Makefile included.
+	-To compile the whole library run
+		make
+	-The binary generated for the sample code is 'sample'.
+	-Use file re-direction as and when required.
