@@ -1,0 +1,128 @@
+﻿/*
+ * Author: Pallavi Gudipati
+ * CS11B044
+ */
+
+This package takes an arbitrarily filled Sudoku, solves it (if it's solvable)
+and prints the output as well as the steps taken to get there.
+
+1. Files needed (and included in this tarball):
+	- sudoku.h
+	- sudoku.cpp
+	- sudoku_main.cpp
+	- input.txt
+	- makefile
+
+2. To compile the program:
+	- Command: make
+   To execute the program:
+	- Command: ./sudoku_main
+
+3. Configuration Parameters:
+ 	- SIZE = size of the matrix.
+	  Default value: 9 (i.e. a 9 x 9 matrix)
+	  This macro is present in sudoku.h file. It gives the size of the matrix.
+
+4. Input:
+	- The input is given using the input.txt file. The values should be given in
+ 	  row-major ordering, separated by whitespace.
+	  Giving it in a matrix form would provide for better readability.
+	  For example :
+	  0 0 0 1 1 1 2 2 2
+	  0 0 0 1 1 1 2 2 2
+	  0 0 0 1 1 1 2 2 2
+	  3 3 3 4 4 4 5 5 5
+	  3 3 3 4 4 4 5 5 5
+	  3 3 3 4 4 4 5 5 5
+	  6 6 6 7 7 7 8 8 8
+	  6 6 6 7 7 7 8 8 8
+	  6 6 6 7 7 7 8 8 8
+
+	- The input symbols should start from 0 and end at SIZE - 1. Any deviance
+	  will result in the program throwing up an error.
+
+5. Output (terminal or stdout):
+	- The program first prints the initial input in the matrix form (just in
+	  case it's not in a readable format).
+	  For example:
+	  Initial input
+	  -------------------------
+	  | 0 0 0 | 1 1 1 | 2 2 2 |
+	  | 0 0 0 | 1 1 1 | 2 2 2 |
+	  | 0 0 0 | 1 1 1 | 2 2 2 |
+	  -------------------------
+	  | 3 3 3 | 4 4 4 | 5 5 5 |
+	  | 3 3 3 | 4 4 4 | 5 5 5 |
+	  | 3 3 3 | 4 4 4 | 5 5 5 |
+	  -------------------------
+	  | 6 6 6 | 7 7 7 | 8 8 8 |
+	  | 6 6 6 | 7 7 7 | 8 8 8 |
+	  | 6 6 6 | 7 7 7 | 8 8 8 |
+	  -------------------------
+
+	- Then the steps that are used to arrive at the solution are printed
+	  sequentially:
+	  For example:
+	  Rotate : Column : 1
+	  Rotate : Row : 2
+	  Shuffle : 2 : 0 2 3 4 5 6 7 8 1 to 2 3 4 5 6 7 0 8 1
+	
+	  The columns and rows are numbered as usual from 1 to 9.
+	  The boxes are numbered in row-major ordering. The step shows the
+	  configuration of the box before shuffling (permutation) and after
+	  shuffling. Again the configuration is shown in row-major ordering.
+	  The final output is printed at the end of the output.
+	
+	  For example:
+	
+	  Solved output.
+	  -------------------------
+	  | 0 1 2 | 3 4 5 | 6 7 8 |
+	  | 3 4 5 | 6 7 8 | 0 1 2 |
+	  | 6 7 8 | 0 1 2 | 3 4 5 |
+	  -------------------------
+	  | 1 2 3 | 4 5 6 | 7 8 0 |
+	  | 4 5 6 | 7 8 0 | 1 2 3 |
+	  | 7 8 0 | 1 2 3 | 4 5 6 |
+	  -------------------------
+	  | 2 3 4 | 5 6 7 | 8 0 1 |
+	  | 5 6 7 | 8 0 1 | 2 3 4 |
+	  | 8 0 1 | 2 3 4 | 5 6 7 |
+	  -------------------------
+
+	- If the Sudoku is not solvable, i.e. if it does not have appropriate
+	  number of different symbols present, the program prints the inventory.
+
+	  For example:
+	  Symbol 0 : Count 8
+	  Symbol 1 : Count 10
+	  Symbol 2 : Count 9
+	  Symbol 3 : Count 9
+	  Symbol 4 : Count 9
+	  Symbol 5 : Count 9
+	  Symbol 6 : Count 9
+	  Symbol 7 : Count 9
+	  Symbol 8 : Count 9
+	  Cannot be solved : Not a legitimate sudoku.
+	
+6. Errors:
+	- Error while loading the input.
+	  If the input exceeds SIZE*SIZE, then it take the first SIZE*SIZE elements.
+	  If the input is less than the required size, then the following error
+	  occurs
+	
+	  ERROR : Improper input.
+	  
+	- Errors during preliminary checks.
+	    Failed preliminary checks.
+	  - If the given SIZE is not a perfect square.
+	    ERROR : Given SIZE is not possible.
+	  - If the symbols are not as specified above.
+	    ERROR : Symbol check failed.
+	  
+	- Errors which are internal to the program.
+	  Rotate getting an out-of-bound value.
+	  MultiRotate giving Rotate an out-of-bound value.
+	  
+	  These errors are present only as precautionary checks if this class is
+	  used in someother program. 
