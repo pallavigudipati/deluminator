@@ -1,0 +1,17 @@
+/* Author: Pallavi Gudipati (CS11B044)
+ * Package name: SmallSudoku.
+ * Language: Prolog
+ */
+
+-> Tells whether a 4 x 4 Sudoku is solvable using just
+	- row-rotation and
+	- column-rotation.
+
+-> Files included.
+	-sudoku.pl
+	-README
+
+-> Usage.
+	- Use swi-pl.
+		consult('sudoku').
+		sudoku(Array of 16 numbers).	
