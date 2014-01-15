@@ -2,27 +2,70 @@
  * Package name: Simulator.
  */
 
+-> The package simulates a system consisting of:
+ 	- counters
+  	- entry-queue
+	- exit-queue
+   
+   The rate at which the entry-queue is filled up can be
+   given as an input.
+  
+   Each person entering the entry-queue waits till he/she reaches
+   the head of the queue and goes to the open counter with the least
+   counter-id.
+
+   The amount of time a person spends at the counter is equal to the
+   number of goods he/she requests. Requests can also be fulfilled
+   partially.
+
+   While exiting, the person has to stop at the head of the exit queue
+   for an amount of time equal to the goods cariied by him/her.
+
+   The entry-queue can be filled at the start of the simulation by
+   giving the appropriate input.
+
+   A counter is closed after it has exhausted all the goods allotted to it.
+
+   The number of goods requested by a person is determined by calling
+   the function Sampling(). This function has to be plugged in by the user,
+   else a dummy function will be used.
+
+   Different views can be used to generate outputs:
+  	- 1 person
+    - 2 counter
+    - 3 in-queue
+    - 4 out-queue	
+
+-> Input Format:
+	- number of counters
+	- initial number of goods in each counter(iterate separately)
+	- rate at which in-queue is filled
+	- initial size of in-queue 
+	- requests of the people in the in-queue before the simulation
+	  starts(iterate separately)
+	- view
+
 -> Files included.
-	-Makefile
-	-README
+	- Makefile
+	- README
 
 	src/
-	-person.cpp
-	-queue_sim.cpp
-	-counter.cpp
-	-display.cpp
-	-simulator.h
-	-simulator.cpp
-	-sample.cpp
+	- person.cpp
+	- queue_sim.cpp
+	- counter.cpp
+	- display.cpp
+	- simulator.h
+	- simulator.cpp
+	- sample.cpp
 
 -> Usage.
-	-A sample code is given.
-	-The library can be included using
+	- A sample code is given.
+	- The library can be included using
 		#include "<path>/simulator.h"
 
 -> Compilation.
-	-Makefile included.
-	-To compile the whole library run
+	- Makefile included.
+	- To compile the whole library run
 		make
-	-The binary generated for the sample code is 'sample'.
-	-Use file re-direction as and when required.
+	- The binary generated for the sample code is 'sample'.
+	- Use file re-direction as and when required.
